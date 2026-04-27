@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero-hobbies">
+    <h1>MY HOBBIES</h1>
+  </section>
+
+  <section class="hobbies">
+
+    <div class="hobby-box">
+      
+      <img src="images.jpeg" alt="Cooking">
+      
+      <p>Cooking has always been more than just a hobby for me. It’s a true passion that fills my heart with creativity and joy. From experimenting with new recipes to perfecting classic dishes, I love the process of transforming simple ingredients into something delicious and memorable. Cooking allows me to express myself, challenge my skills, and share happiness with the people around me through every bite. Each meal I make is not just food; it’s a story, and i genuinely love it</p>
+    </div>
+
+    <div class="hobby-box">
+      
+      <img- src="images (2).jpeg" alt="Singing">
+      
+      <p>Singing is one of my greatest passions. It allows me to express my emotions, tell stories, and connect with others in a way words alone cannot. I love exploring different songs and styles, challenging my voice, and improving with every practice. Performing or just singing for myself brings me joy, confidence, and a sense of freedom. Singing is not just a hobby; it is a part of who I am and a way for me to share my heart with the world.</p>
+    </div>
+
+    <div class="hobby-box">
+      
+      <img src="images (1).jpeg" alt="Dancing">
+      
+      <p>Dancing is a passion that fills me with energy and joy. It allows me to express myself, tell stories through movement, and connect with the rhythm of the music. I love learning new steps, practicing routines, and feeling the flow as my body moves. Dancing challenges me to be creative, confident, and disciplined, while also giving me moments of pure happiness. It is more than just a hobby; it is a way for me to celebrate life and share my passion with others.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2026 SZECAINA KHAYE BARROZO</p>
+  </footer>
+
+  <script>
+    const boxes = document.querySelectorAll(".hobby-box");
+
+    boxes.forEach(box => {
+      box.addEventListener("click", () => {
+        box.style.backgroundColor = "#a0c4ff"; 
+        setTimeout(() => {
+          box.style.backgroundColor = "#bde0fe"; 
+        }, 500);
+      });
+    });
+  </script>
+
+</body>
+</html>
